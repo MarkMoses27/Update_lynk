@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #34495e;
+  --highlight-color: #e67e22;
+  --background-color: #f7f7f7;
+  --white-color: #ffffff;
+  --gray-dark: #95a5a6;
+}
+
+.discover-experiences {
+  background-color: var(--background-color);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.discover-experiences h3 {
+  color: var(--highlight-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.discover-experiences h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.slick-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-item {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: scale(1.05);
+}
+
+.experience-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.experience-content h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  color: var(--gray-dark);
+  margin-bottom: 20px;
+}
+
+.experience-content a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.experience-content a:hover {
+  color: #d35400;
+}
+
+@media (max-width: 1024px) {
+  .discover-experiences h1 {
+    font-size: 2rem;
+  }
+
+  .experience-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .experience-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .discover-experiences {
+    padding: 40px 15px;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .experience-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .discover-experiences {
+    padding: 20px 10px;
+  }
+
+  .experience-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .experience-content p {
+    font-size: 0.9rem;
+  }
+
+  .experience-content a {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,62 @@
+:root {
+  --primary-color: #2c3e50;
+  --highlight-color: #f39c12;
+  --background-color: #f9f9f9;
+  --white-color: #ffffff;
+  --gray-dark: #7f8c8d;
+}
+
+.about-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  color: var(--highlight-color);
+}
+
+.about-header p {
+  font-size: 14px;
+  color: var(--gray-dark);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-description, .about-team {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-description h2, .about-team h2 {
+  font-size: 24px;
+  color: var(--highlight-color);
+  margin-bottom: 20px;
+}
+
+.about-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
+.about-team h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
